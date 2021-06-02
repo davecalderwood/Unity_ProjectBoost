@@ -1138,6 +1138,7 @@ GameObject:
   - component: {fileID: 2530129497563632620}
   - component: {fileID: 2916210870033449695}
   - component: {fileID: 6897297895650026549}
+  - component: {fileID: -758826541660494364}
   m_Layer: 0
   m_Name: SpaceShuttle
   m_TagString: Untagged
@@ -1291,6 +1292,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-758826541660494364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197132438384968315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c706fbe857006974c9ff1f22df2257ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8197132438466839433
 GameObject:
   m_ObjectHideFlags: 0

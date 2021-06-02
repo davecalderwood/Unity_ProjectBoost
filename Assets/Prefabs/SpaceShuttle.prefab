@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: -758826541660494364}
   m_Layer: 0
   m_Name: SpaceShuttle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1196,6 +1196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainThrust: 1200
   rotationThrust: 175
+  mainEngine: {fileID: 8300000, guid: 40efc609ac6229241b4cfe8e110438b1, type: 3}
 --- !u!82 &6897297895650026549
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1206,11 +1207,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40efc609ac6229241b4cfe8e110438b1, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.05
-  m_Pitch: -0.5
-  Loop: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1304,6 +1305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c706fbe857006974c9ff1f22df2257ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayLoad: 1.5
+  success: {fileID: 8300000, guid: f9c75c6165f83404fb18700a4b5014d7, type: 3}
+  crash: {fileID: 8300000, guid: 5c3a68f897be81a4b9a0f8e3eccaaec0, type: 3}
 --- !u!1 &8197132438466839433
 GameObject:
   m_ObjectHideFlags: 0

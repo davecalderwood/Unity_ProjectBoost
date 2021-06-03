@@ -7,10 +7,12 @@ public class Movement : MonoBehaviour
     [SerializeField] float mainThrust = 1200f;
     [SerializeField] float rotationThrust = 175f;
     [SerializeField] AudioClip mainEngine;
-
     [SerializeField] ParticleSystem thrustParticle;
     Rigidbody rb;
     AudioSource audioSource;
+    
+    public bool inWindZone = false;
+    public GameObject windZone;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,31 @@ public class Movement : MonoBehaviour
     {
         ProcessThrust();
         ProcessRotation();
+    }
+
+    void OnTriggerEnter(Collider other) 
+    {
+        if(other.gameObject.tag == "windArea")
+        {
+            windZone = other.gameObject;
+            inWindZone = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other) 
+    {
+        if(other.gameObject.tag == "windArea")
+        {
+            inWindZone = false;
+        }
+    }
+
+    void FixedUpdate() 
+    {
+        if(inWindZone)
+        {
+            rb.AddForce(windZone.GetComponent<WindArea>().direction * windZone.GetComponent<WindArea>().strength);
+        }
     }
 
     void ProcessThrust()

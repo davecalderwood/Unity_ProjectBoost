@@ -1141,6 +1141,7 @@ GameObject:
   - component: {fileID: -758826541660494364}
   - component: {fileID: 4484516057843908458}
   - component: {fileID: 1235740684826038769}
+  - component: {fileID: 8476747157632485791}
   m_Layer: 0
   m_Name: SpaceShuttle
   m_TagString: Player
@@ -1203,6 +1204,8 @@ MonoBehaviour:
   rotationThrust: 175
   mainEngine: {fileID: 8300000, guid: 40efc609ac6229241b4cfe8e110438b1, type: 3}
   thrustParticle: {fileID: 1844388755547062502}
+  inWindZone: 0
+  windZone: {fileID: 0}
 --- !u!82 &6897297895650026549
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6090,6 +6093,18 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &8476747157632485791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197132438384968315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2a5c1e9ae03c1449b7b7d25ae63ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8197132438466839433
 GameObject:
   m_ObjectHideFlags: 0

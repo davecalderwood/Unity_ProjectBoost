@@ -10,7 +10,6 @@ public class Movement : MonoBehaviour
     [SerializeField] ParticleSystem thrustParticle;
     Rigidbody rb;
     AudioSource audioSource;
-    
     public bool inWindZone = false;
     public GameObject windZone;
 

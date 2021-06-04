@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Moving Walls.unity
     guid: 69d82fc5ef698984bbcc19cdabbaaa6b
+  - enabled: 1
+    path: Assets/Scenes/Cannons.unity
+    guid: b1e57f93b255bd5488ca4cc693ffe08e
   m_configObjects: {}

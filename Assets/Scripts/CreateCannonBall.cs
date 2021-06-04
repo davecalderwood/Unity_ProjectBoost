@@ -22,7 +22,7 @@ public class CreateCannonBall : MonoBehaviour
             inCannonZone = true;
             Debug.Log("Player entered Cannon area");
         }
-                    if(!isCreated)
+            if(!isCreated)
             {
                 isCreated = true;
                 Instantiate(CannonBall, Spawnpoint.position, Spawnpoint.rotation);

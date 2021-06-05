@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Over.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/Under.unity
-    guid: 07f30b125e0b6594dbb0782832e17d36
   - enabled: 1
     path: Assets/Scenes/Moving Walls.unity
     guid: 69d82fc5ef698984bbcc19cdabbaaa6b
@@ -18,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cannons.unity
     guid: b1e57f93b255bd5488ca4cc693ffe08e
   - enabled: 1
-    path: Assets/Scenes/Cannons and Fans.unity
-    guid: d20ef2cbb664cfa4cbc195534edfe7cd
+    path: Assets/Scenes/Fans and Cannons.unity
+    guid: 21e1a97c88ca7874280d3cd5ea395a06
   m_configObjects: {}

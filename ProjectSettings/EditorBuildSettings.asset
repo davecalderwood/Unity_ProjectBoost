@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Upsidedown Gauntlet.unity
     guid: a37dcc67816cdc94eb9768094d8297fe
+  - enabled: 1
+    path: Assets/Scenes/Push.unity
+    guid: 30a8dd367d6f0aa47a0b313169c8318a
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 87eb41c7367cadc45b152f1c7c3b8724
   m_configObjects: {}

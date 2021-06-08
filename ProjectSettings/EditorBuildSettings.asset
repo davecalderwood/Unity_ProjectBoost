@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Cannons.unity
     guid: b1e57f93b255bd5488ca4cc693ffe08e
   - enabled: 1
+    path: Assets/Scenes/Gauntlet.unity
+    guid: b549c3d41cd568e43a52083f3d70b9c1
+  - enabled: 1
     path: Assets/Scenes/Fans and Cannons.unity
     guid: 21e1a97c88ca7874280d3cd5ea395a06
+  - enabled: 1
+    path: Assets/Scenes/Side to Side.unity
+    guid: c8bb0c0f12371c04797f14a20c98b7c4
+  - enabled: 1
+    path: Assets/Scenes/Upsidedown Gauntlet.unity
+    guid: a37dcc67816cdc94eb9768094d8297fe
   m_configObjects: {}

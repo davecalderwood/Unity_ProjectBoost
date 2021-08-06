@@ -38,6 +38,9 @@ public class CollisionHandler : MonoBehaviour
             case "Finish":
                 StartSuccessSequence();
                 break;
+            case "Bouncy":
+                BouncyObject();
+                break;
             default:
                 CrashSequence();
                 break;
@@ -96,6 +99,11 @@ public class CollisionHandler : MonoBehaviour
         {
             collisionDisabled = !collisionDisabled; // Toggle collision
         }
+    }
+
+    void BouncyObject()
+    {
+        Debug.Log("Bouncy");
     }
 
 }

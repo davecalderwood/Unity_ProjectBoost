@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Kyle Birthday.unity
+    guid: bd1a3cab675b03c4ebe883f15c649876
+  - enabled: 1
+    path: Assets/Scenes/Invisible Walls.unity
+    guid: 769bb76c099fb2a4ab32e57809ab286e
+  - enabled: 1
     path: Assets/Scenes/Over.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1

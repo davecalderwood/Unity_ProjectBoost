@@ -9,5 +9,7 @@ public class CannonShot : MonoBehaviour
     private void Update() 
     {
         transform.Translate(cannonDirection * cannonStrength * Time.deltaTime);
+        
+        Object.Destroy(gameObject, 5.0f);
     }
 }

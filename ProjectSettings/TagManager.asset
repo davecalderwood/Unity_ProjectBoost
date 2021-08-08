@@ -12,6 +12,7 @@ TagManager:
   - cannonArea
   - Spawnpoint
   - Bouncy
+  - trapArea
   layers:
   - Default
   - TransparentFX

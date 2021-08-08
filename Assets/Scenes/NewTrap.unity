@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 120643856}
   m_Layer: 0
   m_Name: TrapArea
-  m_TagString: Untagged
+  m_TagString: trapArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5963a4165ea3b0e4abc822737ea9a43f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrapZone: {fileID: 208015072}
+  trapZone: {fileID: 120643854}
+  inTrapZone: 0
   objectToMove: {fileID: 208015072}
   moveDirection: {x: 15, y: 0, z: 5}
 --- !u!65 &120643857
@@ -1209,6 +1210,10 @@ PrefabInstance:
     - target: {fileID: 2597461558496762694, guid: 3dfa6580e8abaf842b0a2100a0d4c2fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341560751094896867, guid: 3dfa6580e8abaf842b0a2100a0d4c2fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.96
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dfa6580e8abaf842b0a2100a0d4c2fe, type: 3}

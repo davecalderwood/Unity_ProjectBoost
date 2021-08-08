@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class SpearTrap : MonoBehaviour
 {
-    public GameObject TrapZone;
+    public GameObject trapZone;
+    public bool inTrapZone = false;
     public GameObject objectToMove;
     public Vector3 moveDirection;
     private void OnTriggerEnter(Collider other) 
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Thrust Trap...");
+            trapZone = other.gameObject;
+            inTrapZone = true;
+            
             objectToMove.transform.position += moveDirection;
         }
     }

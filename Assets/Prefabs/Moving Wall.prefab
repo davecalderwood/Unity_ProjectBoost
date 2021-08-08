@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8983742210534627733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -55.8, y: 20.4, z: 0}
-  m_LocalScale: {x: 5, y: 50, z: 8}
+  m_LocalScale: {x: 5, y: 1000, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -109,4 +109,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b748dbba8f3c704989465de65ffcf76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
+  wallMoveDirection: {x: 1, y: 0, z: 0}

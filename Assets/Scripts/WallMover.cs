@@ -5,8 +5,9 @@ using UnityEngine;
 public class WallMover : MonoBehaviour
 {
  public float speed;
+ [SerializeField] Vector3 wallMoveDirection;
     void Update() 
     {
-        transform.Translate(Vector3.right * Time.deltaTime * speed);
+        transform.Translate(wallMoveDirection * Time.deltaTime * speed);
     }
 }

@@ -9,39 +9,45 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 72128ade3bc0fcc499ede0689acf7ef3
   - enabled: 1
-    path: Assets/Scenes/Kyle Birthday.unity
-    guid: bd1a3cab675b03c4ebe883f15c649876
+    path: Assets/Scenes/Level 1.unity
+    guid: 3a7df5d4f0fde224685cac5208acd5d9
   - enabled: 1
-    path: Assets/Scenes/Chasing Wall.unity
-    guid: 9e129b642de71eb4ea299a027f3da2b0
-  - enabled: 1
-    path: Assets/Scenes/Invisible Walls.unity
-    guid: 769bb76c099fb2a4ab32e57809ab286e
-  - enabled: 1
-    path: Assets/Scenes/Over.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Easy Cannon.unity
+    guid: 3c1ee00bcf553fd47babcd227b930a6e
   - enabled: 1
     path: Assets/Scenes/Boomerang Walls.unity
     guid: 69d82fc5ef698984bbcc19cdabbaaa6b
   - enabled: 1
+    path: Assets/Scenes/Push.unity
+    guid: 30a8dd367d6f0aa47a0b313169c8318a
+  - enabled: 1
     path: Assets/Scenes/Cannons.unity
     guid: b1e57f93b255bd5488ca4cc693ffe08e
   - enabled: 1
-    path: Assets/Scenes/Gauntlet.unity
-    guid: b549c3d41cd568e43a52083f3d70b9c1
+    path: Assets/Scenes/Kyle Birthday.unity
+    guid: bd1a3cab675b03c4ebe883f15c649876
+  - enabled: 1
+    path: Assets/Scenes/Invisible Walls.unity
+    guid: 769bb76c099fb2a4ab32e57809ab286e
   - enabled: 1
     path: Assets/Scenes/Fans and Cannons.unity
     guid: 21e1a97c88ca7874280d3cd5ea395a06
+  - enabled: 1
+    path: Assets/Scenes/CannonFollow.unity
+    guid: db120c01032501144abdcb407128f489
+  - enabled: 1
+    path: Assets/Scenes/Chasing Wall.unity
+    guid: 9e129b642de71eb4ea299a027f3da2b0
+  - enabled: 1
+    path: Assets/Scenes/Over.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Gauntlet.unity
+    guid: b549c3d41cd568e43a52083f3d70b9c1
   - enabled: 1
     path: Assets/Scenes/Side to Side.unity
     guid: c8bb0c0f12371c04797f14a20c98b7c4
   - enabled: 1
     path: Assets/Scenes/Upsidedown Gauntlet.unity
     guid: a37dcc67816cdc94eb9768094d8297fe
-  - enabled: 1
-    path: Assets/Scenes/Push.unity
-    guid: 30a8dd367d6f0aa47a0b313169c8318a
-  - enabled: 0
-    path: Assets/Scenes/Maze.unity
-    guid: 87eb41c7367cadc45b152f1c7c3b8724
   m_configObjects: {}

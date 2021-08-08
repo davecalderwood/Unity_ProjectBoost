@@ -68,10 +68,13 @@ public class Movement : MonoBehaviour
     {
         rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
 
-        if (!audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(mainEngine);
-        }
+        // if (!audioSource.isPlaying)
+        // {
+        //     audioSource.PlayOneShot(mainEngine);
+        // }
+
+        SoundController.instance.ThrustingSound();
+        
         if (!thrustParticle.isPlaying)
         {
             thrustParticle.Play();

@@ -2,41 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum soundsGame{
-    die,
-    toque,
-    menu,
-    point,
-    wing
-}
-
 public class SoundController : MonoBehaviour
 {
-    AudioSource audioSource;
-    public AudioClip soundDie;
-    public AudioClip soundToque;
-    public AudioClip soundMenu;
-    public AudioClip soundPoint;
-    public AudioClip soundWing;
- 
     public static SoundController instance;
+    public AudioSource audioSource;
+    public AudioClip mainEngine;
+    public AudioClip successSFX;
+    public AudioClip crashSoundSFX;
+    private float musicVolume = 1f;
 
-    void Start()
+    private void Start() 
     {
         instance = this;
 
         audioSource = GetComponent<AudioSource>();
     }
 
-    public static void PlaySound(soundsGame currentSound)
+    private void Update() 
     {
-        switch(currentSound)
+        audioSource.volume = musicVolume;
+    }
+
+    public void UpdateVolume(float volume)
+    {
+        musicVolume = volume;
+    }
+
+    public void ThrustingSound()
+    {
+        if (!audioSource.isPlaying)
         {
-            case soundsGame.die:
-                // AudioSource.PlayOneShot(soundDie);
-                // audioSource.PlayOneShot(success);
-                
-                break;
+            // Dont add audioSource.Stop(); this will prevent other sounds from playing while thrusting
+            audioSource.PlayOneShot(mainEngine);
         }
     }
+
+    public void SuccessSound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(successSFX);
+    }
+
+    public void CrashSound()
+    {
+        audioSource.Stop();
+        audioSource.PlayOneShot(crashSoundSFX);
+    }
+    
 }

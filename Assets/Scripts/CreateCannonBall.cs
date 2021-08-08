@@ -7,7 +7,6 @@ public class CreateCannonBall : MonoBehaviour
     public GameObject CannonBall;
     public Transform Spawnpoint;
     public float firePower;
-
     public bool inCannonZone = false;
     public GameObject cannonZone;
     float cannonBallSpeed = 5f;

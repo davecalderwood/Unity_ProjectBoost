@@ -5,14 +5,31 @@ using UnityEngine.UI;
 
 public class BackgroundMusic : MonoBehaviour
 {
+     private static BackgroundMusic instance = null;
+    public static BackgroundMusic Instance { get { return instance; } }
     [SerializeField] Slider volumeSlider;
-    private void Awake() 
+    AudioSource audioSource;
+    // private void Awake() 
+    // {
+    //     instance = this;
+    //     DontDestroyOnLoad(gameObject);
+    // }
+    void Awake() {
+    if (instance != null) 
     {
-        DontDestroyOnLoad(transform.gameObject);
+        Destroy(this.gameObject);
+        return;
+    } 
+    else 
+    {
+        instance = this;
     }
+    DontDestroyOnLoad(this.gameObject);
+ }
 
     private void Start() 
     {
+        // Fix issue of music doubling on route to menu from any scene
         PlayerPrefs.SetFloat("musicVolume", 1);
         LoadVolume();
     }

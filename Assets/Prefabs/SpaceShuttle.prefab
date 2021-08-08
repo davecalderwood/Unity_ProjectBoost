@@ -1142,6 +1142,7 @@ GameObject:
   - component: {fileID: 4484516057843908458}
   - component: {fileID: 1235740684826038769}
   - component: {fileID: 8476747157632485791}
+  - component: {fileID: 433972203}
   m_Layer: 0
   m_Name: SpaceShuttle
   m_TagString: Player
@@ -1315,8 +1316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayLoad: 1.5
-  success: {fileID: 8300000, guid: f9c75c6165f83404fb18700a4b5014d7, type: 3}
-  crash: {fileID: 8300000, guid: 5c3a68f897be81a4b9a0f8e3eccaaec0, type: 3}
   successParticle: {fileID: 2331970291771393565}
   crashParticle: {fileID: 3632742050730209822}
 --- !u!198 &4484516057843908458
@@ -6105,6 +6104,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2a5c1e9ae03c1449b7b7d25ae63ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &433972203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197132438384968315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d49a9f85aca514dae59ff5ed1871e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  mainEngine: {fileID: 8300000, guid: 40efc609ac6229241b4cfe8e110438b1, type: 3}
+  successSFX: {fileID: 8300000, guid: f9c75c6165f83404fb18700a4b5014d7, type: 3}
+  crashSoundSFX: {fileID: 8300000, guid: 5c3a68f897be81a4b9a0f8e3eccaaec0, type: 3}
 --- !u!1 &8197132438466839433
 GameObject:
   m_ObjectHideFlags: 0
@@ -6763,14 +6778,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
---- !u!4 &2491597623563917771 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
-  m_PrefabInstance: {fileID: 2494289711393166595}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &2331970291771393565 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198631066050499358, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
+  m_PrefabInstance: {fileID: 2494289711393166595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2491597623563917771 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
   m_PrefabInstance: {fileID: 2494289711393166595}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3506682946153610462

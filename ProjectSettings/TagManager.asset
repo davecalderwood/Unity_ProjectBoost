@@ -11,11 +11,11 @@ TagManager:
   - cannonBall
   - cannonArea
   - Spawnpoint
-  - Bouncy
   - trapArea
   - SpearTrap
   - Laser
   - Trigger
+  - Gate
   layers:
   - Default
   - TransparentFX

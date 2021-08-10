@@ -20,4 +20,8 @@ public class ShootLaser : MonoBehaviour
             fireLaser = false;
         }
     }
+    private void OnCollisionEnter(Collision other) 
+    {
+        Debug.Log(this.name + "--Collided with--" + other.gameObject.name);
+    }
 }

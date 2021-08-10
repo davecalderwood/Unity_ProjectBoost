@@ -6,18 +6,20 @@ public class Laser : MonoBehaviour
 {
     [SerializeField] public float laserStrength;
     [SerializeField] public Vector3 laserDirection;
+    [SerializeField] public string[] objectToDestroy;
     private void Update() 
     {
         transform.Translate(laserDirection * laserStrength * Time.deltaTime);
         
         Object.Destroy(gameObject, 3.0f);
     }
-
-    private void OnTriggerEnter(Collider other) 
+    private void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.tag == "Trigger")
+        Debug.Log(this.name + "--Collided with--" + other.gameObject.name);
+        if (other.gameObject.tag == "Trigger")
         {
-            Debug.Log("Laser hit Trigger");
+            Destroy(gameObject);
+            Destroy(GameObject.Find("Gate"));
         }
     }
 }

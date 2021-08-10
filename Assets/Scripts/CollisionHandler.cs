@@ -32,7 +32,7 @@ public class CollisionHandler : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Friendly":
-                Debug.Log("Friendly");
+                // Debug.Log("Friendly");
                 break;
             case "Laser":
                 break;
@@ -57,6 +57,7 @@ public class CollisionHandler : MonoBehaviour
         successParticle.Play();
 
         GetComponent<Movement>().enabled = false;
+        GetComponent<ShootLaser>().enabled = false;
         Invoke("LoadNextLevel", delayLoad);
     }
 
@@ -81,6 +82,7 @@ public class CollisionHandler : MonoBehaviour
         crashParticle.Play();
 
         GetComponent<Movement>().enabled = false;
+        GetComponent<ShootLaser>().enabled = false;
         Invoke("ReloadLevel", delayLoad);
     }
     void ReloadLevel()

@@ -33,6 +33,8 @@ public class Movement : MonoBehaviour
         {
             windZone = other.gameObject;
             inWindZone = true;
+
+            Debug.Log("Player Entered WindArea");
         }
     }
 
@@ -41,6 +43,8 @@ public class Movement : MonoBehaviour
         if(other.gameObject.tag == "windArea")
         {
             inWindZone = false;
+            
+            Debug.Log("Player Left WindArea");
         }
     }
 

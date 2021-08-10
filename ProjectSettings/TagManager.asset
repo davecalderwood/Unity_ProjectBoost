@@ -13,6 +13,9 @@ TagManager:
   - Spawnpoint
   - Bouncy
   - trapArea
+  - SpearTrap
+  - Laser
+  - Trigger
   layers:
   - Default
   - TransparentFX

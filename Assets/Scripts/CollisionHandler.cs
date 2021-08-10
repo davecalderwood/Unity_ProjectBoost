@@ -34,6 +34,8 @@ public class CollisionHandler : MonoBehaviour
             case "Friendly":
                 Debug.Log("Friendly");
                 break;
+            case "Laser":
+                break;
             case "Finish":
                 StartSuccessSequence();
                 break;

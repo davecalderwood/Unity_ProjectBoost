@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class SpearTrap : MonoBehaviour
 {
-    public GameObject trapZone;
-    public bool inTrapZone = false;
-    public GameObject objectToMove;
-    public Vector3 moveDirection;
+    [SerializeField] GameObject spearTrap;
+    // [SerializeField] Vector3 movePosition;
+    [SerializeField] float speed;
+    [SerializeField] float distance;
+    bool hasMoved = false;
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.gameObject.tag == "Player")
+        // spearTrap.transform.position = Vector3.Lerp(spearTrap.transform.position, movePosition, Time.deltaTime * speed);
+
+        if(!hasMoved)
         {
-            trapZone = other.gameObject;
-            inTrapZone = true;
-            
-            objectToMove.transform.position += moveDirection;
+            spearTrap.transform.position += spearTrap.transform.up * distance * speed;
+            hasMoved = true;
         }
     }
 }

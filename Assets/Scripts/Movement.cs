@@ -12,12 +12,20 @@ public class Movement : MonoBehaviour
     AudioSource audioSource;
     public bool inWindZone = false;
     public GameObject windZone;
+    private float speedBoost; 
+    // different than mainThrust; this is for the temporary boost multiplier
+    private float boostTimer;
+    private bool isBoosting;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+
+        speedBoost = 1f;
+        boostTimer = 0f;
+        isBoosting = false;
     }
 
     // Update is called once per frame
@@ -35,6 +43,13 @@ public class Movement : MonoBehaviour
             inWindZone = true;
 
             Debug.Log("Player Entered WindArea");
+        }
+
+        if(other.gameObject.tag == "Boost")
+        {
+            isBoosting = true;
+            speedBoost = 3f;
+            Destroy(other.gameObject);
         }
     }
 
@@ -70,7 +85,18 @@ public class Movement : MonoBehaviour
 
     void StartThrusting()
     {
-        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+        if(isBoosting)
+        {
+            boostTimer += Time.deltaTime;
+
+            if(boostTimer >= 1)
+            {
+                speedBoost = 1f;
+                boostTimer = 0f;
+                isBoosting = false;
+            }
+        }
+        rb.AddRelativeForce(Vector3.up * mainThrust * speedBoost * Time.deltaTime);
 
         // if (!audioSource.isPlaying)
         // {

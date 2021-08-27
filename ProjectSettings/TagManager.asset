@@ -16,6 +16,7 @@ TagManager:
   - Laser
   - Trigger
   - Gate
+  - Boost
   layers:
   - Default
   - TransparentFX

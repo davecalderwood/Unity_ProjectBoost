@@ -39,6 +39,9 @@ public class CollisionHandler : MonoBehaviour
             case "Finish":
                 StartSuccessSequence();
                 break;
+            case "Boost":
+                Debug.Log("Boost");
+                break;
             case "Bouncy":
                 BouncyObject();
                 break;
